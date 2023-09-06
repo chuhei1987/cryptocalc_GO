@@ -1,25 +1,38 @@
-# cryptocalc
+# CRYPTOCALCIEC2018
 ==========
 
-A program to calculate md5/sha1/sha256/sha512 based on golang
+A program to calculate 17 types of hash(s) , ISO/IEC 10118-3:2018,  based on golang
 
 Install:
 
 ```shell
-$ go get -u github.com/shenyp09/cryptocalc
+$ go get -u github.com/chuhei1987/cryptocalc_GO
 ```
 
 ### Usage: cryptocal command file
 
-Command: md5 sha1 sha256 sha512
+Command: ripemd160 ripemd128 sha1 sm3 sha224 sha256 sha384 sha512 sha512-224 sha512-256 sha3-224 sha3-258 sha3-384 sha3-512 streebog256 streebog512 whirlpool
 
 
 e.g.
 
 ```shell
-$ ./cryptocal md5 cryptocal.go
+$ ./cryptocal sha256 cryptocal.go
 
-MD5: e49ee397aa3400341635b4f163badc1d
+SHA2-256: 57acc54a01333cf860cbaace0a22bde817e5a7540a2678b34efb12b8c9006236
+
+$ ./cryptocal sha512 cryptocal.go
+
+SHA2-512: e49459573f9ec86104704e8f19d7fff1ec23fad77a4d775012e1f7be99ed3c7687ae2cb6f6a8be2f2f9857b9465f53aa3d430185834e5dc02189c24992d85294
+
+$ ./cryptocal sm3 cryptocal.go
+
+     SM3: b5055a161ceec9b267a583b0e0ae209bf9fe6850f1d7e599ff751156b8d6c818
+
+$ ./cryptocal whirlpool cryptocal.go
+
+WHIRLPOOL: 56d3579f67a689add42c69bcb07449ea8cb2ac63f10067da385a9403296bdac84df86872e40eb3f7f7c9d24e940c9ce14326fb2a832bc4142c1c377d81c80e6b
+
 ```
 
 ### For Compiling
