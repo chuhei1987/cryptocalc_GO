@@ -1,7 +1,11 @@
-# CRYPTOCALCIEC2018
+# CRYPTOCALCIEC2018 ( General version )
 ==========
 
-A program to calculate 17 types of hash(s) , ISO/IEC 10118-3:2018,  based on golang
+CHUHEI's here. 
+
+A program to calculate NINE secure types of hash(s) , Based on ISO/IEC 10118-3:2018 and security officer's recommendation,  Powered by golang
+
+The remaining eight are taken out from this branch due to the length of hash and details of cryptanalysis. 
 
 Install:
 
@@ -11,7 +15,7 @@ $ go get -u github.com/chuhei1987/cryptocalc_GO
 
 ### Usage: cryptocal command file
 
-Command: ripemd160 ripemd128 sha1 sm3 sha224 sha256 sha384 sha512 sha512-224 sha512-256 sha3-224 sha3-258 sha3-384 sha3-512 streebog256 streebog512 whirlpool
+Command: sm3 sha256 sha384 sha512 sha512-256 sha3-258 sha3-384 sha3-512 whirlpool
 
 
 e.g.
@@ -59,6 +63,8 @@ In most cases, such as sha256sum [text file] , sha256sum [archive file] output t
 
 ### What next?
 Try digging deeper, when new thing ready, may reveal some of the actual purposes.
+
+The being is in public domain. 
 
 
 
